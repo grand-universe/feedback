@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import "base/base";
+@import "var";
+
+@font-face {
+  font-family: 'SFProRounded-Bold';
+  src: url('../assets/font/SF-Pro-Rounded-Bold.woff')  format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProRounded-Heavy';
+  src: url('../assets/font/SF-Pro-Rounded-Heavy.woff')  format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFProRounded-Semibold';
+  src: url('../assets/font/SF-Compact-Rounded-Semibold.woff')  format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: 'SFProRounded-Medium';
+//   src: url('../assets/font/SF-Pro-Rounded-Regular.woff')  format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+body {
+  font: 12px/1.5  "SFProRounded-Bold","SFProRounded-Semibold","San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background-color: #fff;
+  a {
+    text-decoration: none;
+    color: #333;
+    &:hover {
+      text-decoration: underline;
+      color: #333;
+    }
+  }
+  * {
+    box-sizing: border-box;
+    outline: none;
+  }
+  input {
+    color: #333;
+  }
+}
+.section-preload {
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-bottom: 0.15rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.delete {
+  position: absolute;
+  cursor: pointer;
+}
+.delete-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.16rem;
+  height: 0.16rem;
+  background-image: url(../img/delete.png);
+  background-size: 100% 100%;
+}
+.span-preload {
+  position: relative;
+  height: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+.delete-img:hover {
+  .section-preload {
+    background-color: rgba(0,0,0, 0.3);
+  }
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
+.velmld-overlay {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.back {
+  position: absolute;
+  width: 0.28rem;
+  height: 0.28rem;
+  background-image: url(../img/iconClose.png);
+  background-size: 100% 100%;
+  right: 0.15rem;
+  top: 3%;
+}
+.btn-submit {
+  border-radius: 8px;
+  line-height: 0.4rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background-color: rgba(116,193,10,1);
+  font-family: 'SFProRounded-Bold';
+  color: rgba(255,255,255,1);
+  font-size: 0.18rem;
+  &.is-disabled {
+    background-color: rgba(116,193,10,0.6);
+    font-family: 'SFProRounded-Bold';
+    color: rgba(255,255,255,0.6);
+  }
+}

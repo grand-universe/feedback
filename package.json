@@ -1,0 +1,36 @@
+{
+  "name": "feedback",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "fix": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "emoji-regex": "^9.0.0",
+    "http-server": "^14.1.1",
+    "moment": "^2.29.4",
+    "sass": "^1.62.0",
+    "scss": "^0.2.4",
+    "uuid": "^9.0.0",
+    "vue": "^2.6.14",
+    "vue-element-loading": "^2.0.2",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

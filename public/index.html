@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
+  />
+  <title>Feedback</title>
+  <meta name="description" content="" />
+  <script>
+    function rejustRem(a, b) {
+      function d() {
+        var d = window.document.documentElement.getBoundingClientRect().width;
+        (window.remBase = (d / b) * a), (c.style.fontSize = remBase + "px");
+      }
+      var c = document.getElementsByTagName("html")[0];
+      window.addEventListener("resize", d),
+        document.addEventListener("DOMContentLoaded", function () {
+          d();
+        });
+    }
+    rejustRem(100, 375);
+    window.feedBackEmail = AppEmailConfig[window.location.host].email;
+    window.appName = AppEmailConfig[window.location.host].name;
+  </script>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+</body>
+</html>
