@@ -455,7 +455,7 @@ export default {
       }
       if (this.text.length > 0) {
         var strs = new Array();
-        strs = this.text.split(" ");
+        strs = this.text.match(/[\u00ff-\uffff]|\S+/g);
         if (strs.length < 5) {
           return this.$message({
             type: "error",

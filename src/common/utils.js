@@ -21,7 +21,7 @@ export function formatFixedOne(num) {
 }
 
 export function emailCheck(str) {
-  var emailPat = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+  var emailPat = /^[.a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
   return emailPat.test(str);
 }
 
